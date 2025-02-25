@@ -1,0 +1,39 @@
+ .country_main_info {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 1fr;
+     grid-gap: 3rem;
+     padding: 2rem 1rem;
+
+     .flag_image {
+         width: 100%;
+     }
+
+     .country_borders_list {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+ }
+
+ @media (max-width: 1024px) {
+     .country_main_info {
+         grid-template-columns: 1fr;
+         grid-gap: 1rem;
+     }
+ }
+
+ @media (max-width: 425px) {
+     .country_main_info {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         grid-gap: 0;
+         padding: 1rem 0;
+     }
+
+     .country_info,
+     .country_borders_info {
+         padding: 1rem;
+     }
+ }

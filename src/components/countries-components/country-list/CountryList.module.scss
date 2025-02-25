@@ -1,0 +1,27 @@
+.country_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px; 
+    margin: 50px;
+}
+
+
+@media (max-width: 1024px) {
+    .country_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .country_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .country_list {
+        grid-template-columns: 1fr;
+    }
+}

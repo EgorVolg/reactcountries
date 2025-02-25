@@ -1,0 +1,11 @@
+.header {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    .comeback_btn {
+        cursor: pointer;
+    }
+}
